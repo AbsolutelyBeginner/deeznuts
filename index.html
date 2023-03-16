@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You're gay</title>
+    <script src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/d356dc993a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Huy Vo</title>
 </head>
 <body>
-    <h1>Your gay</h1>
+    <div class="darklightmode">
+        <button class="togglemodes" onclick="darkOrlight()"><i class="fa-solid fa-circle-half-stroke"></i></button> WILL IMPLEMENT LATER
+    </div>
+    <div class ="aboutme">
+        <h1>
+           <img id="me" src="./photos/FB_IMG_1678573029592.jpg">
+           <br>Huy Vo 
+        </h1>
+    </div>
+    <div class="intro">
+        <p>
+            Greetings, I'm Huy but you can call me <em>Noel</em>. <br>I'm currently pursuing my B.S in Computer Science at the <i id="first">University o</i><i id ="second">f Houston.</i> 
+            <br>Beside college, I also train Calisthenics 6 days a week as a personal hobby, as well as Video Editing as a side gig.          
+        </p>
+    </div>
+    <!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openLinks(event, 'Discord')"><i class="fa-brands fa-discord"></i></button>
+    <button class="tablinks" onclick="openLinks(event, 'Youtubes')"><i class="fa-brands fa-youtube"></i></button>
+    <a href ="https://www.instagram.com/noelzedum/">
+        <button class="tablinks"><i class="fa-brands fa-instagram"></i></button>
+    </a>
+    <a href="https://github.com/AbsolutelyBeginner">
+        <button class="tablinks"><i class="fa-brands fa-github"></i></button>
+    </a>
+    <button class="tablinks" onclick="openLinks(event, 'BTL')">Best Song Yes</button>
+    
+  </div>
+  
+  <!-- Tab content -->
+  <div class="tabcontent" id="Discord">
+    <p>Add me on Discord!<br>Noel#9114</p>
+    
+  </div>
+  <div id="Youtubes" class="tabcontent">
+    <p>Gaming Channel</p>
+    <a href="https://www.youtube.com/channel/UC0p4YmP1v5MVTVzFPphY8nw" class="gaming">
+        <img id="gamingyt" src="./photos/gamingyoutube.jpg" alt="mygamingyt">
+    </a>       
+    </a>
+    <p>Calisthenics Channel</p>
+    <a href="https://www.youtube.com/channel/UCj1AwcddUjv3asAUBT5YdWQ" class="calis">
+        <img id="calisyt" src="./photos/calisyoutube.jpg" alt="mycalisyt">  
+    </a>   
+  </div>
+  <div id="BTL" class="tabcontent">
+    <h3>Bury The Light <br>
+        <img id="Vergil" src="./photos/BTL.png" alt="burythelight">
+    </h3>
+    <audio controls>
+        <source src="BTL.mp3" type="audio/mpeg">
+    </audio>
+  </div>
 </body>
 </html>

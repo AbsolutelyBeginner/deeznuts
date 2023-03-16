@@ -1,0 +1,86 @@
+/* Style the tab */
+*
+{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body
+{
+    background-color: rgb(32, 32, 32);
+    color:white;
+}
+img
+{
+    max-width: 10%;
+    max-height: 10%;
+}
+.aboutme
+{
+    position: relative;
+    
+}
+.aboutme #me
+{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+}
+.intro
+{
+    font-size: larger;
+}
+.intro em
+{
+    color: rgb(0, 238, 255);
+    
+    
+    text-decoration: none;
+    font-style: normal;
+}
+
+.tab 
+{
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    text-align: center;
+    display: inline-block;
+}
+  
+  /* Style the buttons that are used to open the tab content */
+.tab button 
+  {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline:#000000;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    text-align: center;
+    
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover 
+  {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active 
+  {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+.tabcontent 
+{
+    display: none;
+    padding: 6px 12px;
+}
+
+.tabcontent #BTL audio
+{    
+    
+}
