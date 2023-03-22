@@ -64,7 +64,9 @@ img
   /* Change background color of buttons on hover */
   .tab button:hover 
   {
-    background-color: #ddd;
+    background-color: #000000;
+    color:rgb(255, 255, 255);
+    
   }
   
   /* Create an active/current tablink class */
@@ -83,4 +85,10 @@ img
 .tabcontent #BTL audio
 {    
     
+}
+.togglemodes:hover
+{
+  background-color: #000000;
+  color:rgb(255, 255, 255);
+  transition:0.5s;
 }
