@@ -1,67 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts.js"></script>
-    <script src="https://kit.fontawesome.com/d356dc993a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="darkmode.css" id="theme-link">
+
+
+
     <title>Huy Vo</title>
 </head>
+
 <body>
-    <div class="darklightmode">
-        <button class="togglemodes" onclick="darkOrlight()"><i class="fa-solid fa-circle-half-stroke"></i></button> Dark/Light Mode under construction.
-    </div>
-    <div class ="aboutme">
+   
+    <button class="togglemodes"><i class="fa-solid fa-circle-half-stroke"></i></button> 
+    <div>
+
         <h1>
-           <img id="me" src="./photos/FB_IMG_1678573029592.jpg">
-           <br>Huy Vo 
+            <img id="me" src="./photos/FB_IMG_1678573029592.jpg">
+            <br>Huy Vo
         </h1>
     </div>
     <div class="intro">
         <p>
-            Hello there! I'm Huy but you can call me <em>Noel</em>. <br>I'm currently pursuing my B.S in Computer Science at the <i id="first">University o</i><i id ="second">f Houston.</i> 
-            <br>Beside college, I also train Calisthenics 6 days a week as a personal hobby, as well as Video Editing as a side gig.          
+            Hello there! I'm Huy but you can call me <em>Noel</em>. <br>I'm currently pursuing my B.S in Computer
+            Science at the <i id="first">University o</i><i id="second">f Houston.</i>
+            <br>Beside college, I also train Calisthenics 6 days a week as a personal hobby, as well as Video Editing as
+            a side gig.
         </p>
     </div>
     <!-- Tab links -->
-<div class="tab">
-    <button class="tablinks" onclick="openLinks(event, 'Discord')"><i class="fa-brands fa-discord"></i></button>
-    <button class="tablinks" onclick="openLinks(event, 'Youtubes')"><i class="fa-brands fa-youtube"></i></button>
-    <a href ="https://www.instagram.com/noelzedum/">
-        <button class="tablinks"><i class="fa-brands fa-instagram"></i></button>
-    </a>
-    <a href="https://github.com/AbsolutelyBeginner">
-        <button class="tablinks"><i class="fa-brands fa-github"></i></button>
-    </a>
-    <button class="tablinks" onclick="openLinks(event, 'BTL')">Best Song Yes</button>
-    
-  </div>
-  
-  <!-- Tab content -->
-  <div class="tabcontent" id="Discord">
-    <p>Add me on Discord!<br>Noel#0666</p>
-    
-  </div>
-  <div id="Youtubes" class="tabcontent">
-    <p>Gaming Channel</p>
-    <a href="https://www.youtube.com/channel/UC0p4YmP1v5MVTVzFPphY8nw" class="gaming">
-        <img id="gamingyt" src="./photos/gamingyoutube.jpg" alt="mygamingyt">
-    </a>       
-    </a>
-    <p>Calisthenics Channel</p>
-    <a href="https://www.youtube.com/channel/UCj1AwcddUjv3asAUBT5YdWQ" class="calis">
-        <img id="calisyt" src="./photos/calisyoutube.jpg" alt="mycalisyt">  
-    </a>   
-  </div>
-  <div id="BTL" class="tabcontent">
-    <h3>Bury The Light - Victor Borba <br>
-        <iframe width="420" height="315"
-src="https://www.youtube.com/embed/8GYMFl7zkMA">
-</iframe>
-    </h3>
-    
-  </div>
+    <div class="tab">
+        <button class="tablinks" onclick="openLinks(event, 'Discord')"><i class="fa-brands fa-discord"></i></button>
+        <button class="tablinks" onclick="openLinks(event, 'Youtubes')"><i class="fa-brands fa-youtube"></i></button>
+        <button class="tablinks" onclick="openLinks(event, 'IG')"><i class="fa-brands fa-instagram"></i></button>
+        <button class="tablinks" onclick ="openLinks(event, 'Github')"><i class="fa-brands fa-github"></i></button>
+        <button class="tablinks" onclick="openLinks(event, 'BTL')">Best Song Yes</button>
+    </div>
+
+    <!-- Tab content -->
+    <div class="tabcontent" id="Discord">
+        <p>Add me on Discord!<br>Noel#0666</p>
+
+    </div>
+    <div class="tabcontent" id="IG">
+        <p>Follow me on Instagram!<br>
+            <a href="https://www.instagram.com/noelzedum/">NoelZedum <i class="fa-brands fa-instagram"></i></a>
+        </p>
+    </div>
+    <div class="tabcontent" id="Github">
+        <p>Check out my Github!<br>
+            <a href="https://github.com/AbsolutelyBeginner"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <div id="Youtubes" class="tabcontent">
+        <p>Gaming Channel</p>
+        <a href="https://www.youtube.com/channel/UC0p4YmP1v5MVTVzFPphY8nw" class="gaming">
+            <img id="gamingyt" src="./photos/gamingyoutube.jpg" alt="mygamingyt">
+        </a>
+        </a>
+        <p>Calisthenics Channel</p>
+        <a href="https://www.youtube.com/channel/UCj1AwcddUjv3asAUBT5YdWQ" class="calis">
+            <img id="calisyt" src="./photos/calisyoutube.jpg" alt="mycalisyt">
+        </a>
+    </div>
+    <div id="BTL" class="tabcontent">
+        <h3>Bury The Light - Victor Borba <br>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/8GYMFl7zkMA">
+            </iframe>
+        </h3>
+
+    </div>
 </body>
+
+<script src="scripts.js"></script>
+<script src="https://kit.fontawesome.com/d356dc993a.js" crossorigin="anonymous"></script>
+
 </html>
