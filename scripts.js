@@ -26,8 +26,12 @@ btn.addEventListener("click", function ()
   // Swap out the URL for the different stylesheets
   if (theme.getAttribute("href") == "darkmode.css") 
   {
-    theme.href = "lightmode.css";
+    setTimeout(() => {
+      
+    theme.href = "lightmode.css"}, 100);
   } else {
-    theme.href = "darkmode.css";
+    setTimeout(() => {
+      
+      theme.href = "darkmode.css"}, 100);
   }
 }); 
