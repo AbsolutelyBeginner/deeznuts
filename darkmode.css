@@ -210,7 +210,7 @@ h4 {
   color:rgb(255, 0, 0);
 }
 }
-@media (max-width:48rem)
+@media (max-width:32rem)
 {
   body {
     background: black;
