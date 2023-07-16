@@ -15,6 +15,7 @@ a:hover {
   transition: 1.2s;
 }
 
+
 body {
   
   background: linear-gradient(-45deg, #990000, #080808, rgb(133, 0, 0), #000000);
@@ -23,6 +24,7 @@ body {
   color: white;
   transition: 1.2s;
 }
+
 @keyframes gradient
 {
   0% {
@@ -44,9 +46,12 @@ body {
 img {
   object-fit: cover;
 }
+#uhlogo{
+  object-fit: fill;
+}
 #me {
-  width: 114px;
-  height: 114px;
+  width: 10rem;
+  height: 10rem;
   background-color: #ffffff;
   padding:1px;
   border-radius: 50%;
@@ -66,21 +71,33 @@ img {
 }
 .intro {
   font-size: larger;
+  color:rgb(216, 216, 216);
 }
-
-.intro em {
+#nickname{
+  font-weight: bolder;
+  font-style:italic;
   color: rgb(51, 255, 0);
   text-decoration: none;
-  font-style: normal;
   transition: 1.2s;
+  font-family:'Tektur', cursive;
 }
-
+.intro i{
+  font-weight: bold;
+}
+#first{
+  color:red;
+  
+}
+#second{
+  color:snow;
+}
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
   text-align: center;
   display: inline-block;
+  
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -90,10 +107,10 @@ img {
   border: none;
   outline: #000000;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 1.4rem 1.4rem;
   transition: 0.5s;
   text-align: center;
-
+  font-size:1.2rem;
 }
 
 /* Change background color of buttons on hover */
@@ -113,16 +130,24 @@ img {
   display: none;
   padding: 6px 12px;
 }
+.tabcontent a{
+  font-size:2rem;
+}
 
 .togglemodes {
   background-color: black;
   color: white;
+  font-size:1.4rem;
 }
 
 .togglemodes:hover {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   transition: 0.5s;
+}
+h3 {
+   padding: 0.5rem;
+   font-family:'Lumanosimo', Verdana, Geneva, Tahoma, sans-serif;
 }
 #projects{
   /* design shit later */
@@ -137,10 +162,11 @@ img {
 }
 #project-card-img {
   object-fit:cover;
-  width:400px;
-  height:400px;
+  width:25rem;
+  height:25rem;
   border: 1.4px solid white;
   border-radius:16px;
+
 }
 #project-card #project-link
 {
@@ -152,6 +178,7 @@ img {
   padding: 10px;
   border-radius:8px;
   transition:0.5s;
+  font-size:1.5rem;
 }
 #project-card #project-link:hover{
   color:black;
@@ -183,3 +210,60 @@ h4 {
   color:rgb(255, 0, 0);
 }
 }
+@media (max-width:48rem)
+{
+  body {
+    background: black;
+    animation: breathing 8s ease infinite;
+    color: white;
+    transition: 1.2s;
+  }
+  .togglemodes{
+    font-size:2.4rem;
+  }
+  .tab{
+    display:flex;
+    flex-direction: row;
+  }
+  .tab button{
+    font-size: 1.2rem;
+    padding: 14px 16px;
+  }
+  #projects{
+    display:grid;
+    grid-template-columns: 100%;
+    margin: 0;
+
+  }
+  #project-card{
+width: 90%;
+box-sizing:border-box;
+padding: 0;
+margin: auto;
+
+  }
+  #project-card-img {
+    object-position: center;
+    
+    object-fit: contain;
+    width:15rem;
+    height: 80%;
+    border: 1.4px solid white;
+    margin: 15px;
+    border-radius: 0;
+    position:relative;
+    overflow:hidden;
+    
+  }
+  @keyframes breathing{
+    0% {
+      background:rgb(63, 63, 63);
+    }
+    50% {
+      background: rgb(107, 0, 0);
+    }
+    100%{
+      background: rgb(63, 63, 63);
+    }
+    }
+  }
