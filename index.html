@@ -7,12 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="darkmode.css" id="theme-link">
     <link rel="icon" href="photos/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Open+Sans:ital,wght@1,300&family=Roboto:wght@100;300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
     <title>Huy Võ</title>
 </head>
 
 <body>
-   
-    <button class="togglemodes"><i class="fa-solid fa-circle-half-stroke"></i></button> 
+
+    <button class="togglemodes"><i class="fa-solid fa-circle-half-stroke"></i></button>
     <div>
         <h1>
             <img id="me" src="./photos/20230318_194529 (2).jpg">
@@ -32,7 +38,7 @@
         <button class="tablinks" onclick="openLinks(event, 'Discord')"><i class="fa-brands fa-discord"></i></button>
         <button class="tablinks" onclick="openLinks(event, 'Youtubes')"><i class="fa-brands fa-youtube"></i></button>
         <button class="tablinks" onclick="openLinks(event, 'IG')"><i class="fa-brands fa-instagram"></i></button>
-        <button class="tablinks" onclick ="openLinks(event, 'Github')"><i class="fa-brands fa-github"></i></button>
+        <button class="tablinks" onclick="openLinks(event, 'Github')"><i class="fa-brands fa-github"></i></button>
         <button class="tablinks" onclick="openLinks(event, 'BTL')">Best Song Yes</button>
         <button class="tablinks" onclick="openLinks(event,'projects')">My Projects</button>
     </div>
@@ -44,22 +50,22 @@
     </div>
     <div class="tabcontent" id="IG">
         <p>Follow me on Instagram!<br>
-            <a href="https://www.instagram.com/noelzedum/">NoelZedum <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/noelzedum/" target="_blank">NoelZedum <i class="fa-brands fa-instagram"></i></a>
         </p>
     </div>
     <div class="tabcontent" id="Github">
         <p>Check out my Github!<br>
-            <a href="https://github.com/AbsolutelyBeginner"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/AbsolutelyBeginner" target="_blank"><i class="fa-brands fa-github"></i></a>
     </div>
     <div id="Youtubes" class="tabcontent">
         <p>Gaming Channel</p>
-        <a href="https://www.youtube.com/channel/UC0p4YmP1v5MVTVzFPphY8nw" class="gaming">
-            <img id="gamingyt" src="./photos/gamingyoutube.jpg" alt="mygamingyt">
+        <a href="https://www.youtube.com/channel/UC0p4YmP1v5MVTVzFPphY8nw" target="_blank" class="gaming">
+            <img id="yt" src="./photos/gamingyoutube.jpg" alt="mygamingyt">
         </a>
         </a>
         <p>Calisthenics Channel</p>
-        <a href="https://www.youtube.com/channel/UCj1AwcddUjv3asAUBT5YdWQ" class="calis">
-            <img id="calisyt" src="./photos/calisyoutube.jpg" alt="mycalisyt">
+        <a href="https://www.youtube.com/channel/UCj1AwcddUjv3asAUBT5YdWQ" target="_blank" class="calis">
+            <img id="yt" src="./photos/calisyoutube.jpg" alt="mycalisyt">
         </a>
     </div>
     <div id="BTL" class="tabcontent">
@@ -70,10 +76,20 @@
 
     </div>
     <div id="projects" class="tabcontent">
-        <h3>My projects</h3>
         <ul id="projects"></ul>
-            <li id="themeparkweb">Themepark Database Management System</li>
+        <li id="project-card">
+            <img id="project-card-img" src="photos/themepark.PNG">
             
+                <h4>Themepark Database Management System</h4>
+                <a id="project-link" href="http://www.webappvillage.com/ThemePark10/" target="_blank">Link</a>
+                <a id="project-link" href="https://github.com/DescendingMisery/ThemePark_Team10" target="_blank">Git Hub</a>
+                
+                <section id="project-desc">
+                   A class project of <em>COSC 3380</em> designed and created with the collaboration of 5 members over 
+                    the course of 2 months.
+                </section>
+            
+        </li>
     </div>
 </body>
 
