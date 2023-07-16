@@ -48,6 +48,7 @@ img {
 }
 #uhlogo{
   object-fit: fill;
+  pointer-events: none;
 }
 #me {
   width: 10rem;
@@ -58,6 +59,7 @@ img {
   border: 1px white solid;
   display: inline-block;
   transition:1.2s;
+  pointer-events: none;
 }
 #yt{
   width: 120px;
@@ -133,7 +135,10 @@ img {
 .tabcontent a{
   font-size:2rem;
 }
-
+iframe{
+  width:45rem;
+  height:26rem;
+}
 .togglemodes {
   background-color: black;
   color: white;
@@ -228,6 +233,12 @@ h4 {
   .tab button{
     font-size: 1rem;
     padding: 14px 16px;
+  }
+  iframe{
+    margin: auto;
+    justify-content: center;
+    width:22rem;
+    height:16rem;
   }
   #projects{
     display:grid;
