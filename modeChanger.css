@@ -8,41 +8,61 @@
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.5s ease-out;
 }
 
 a:hover {
   color: rgb(0, 225, 255);
-  transition: 1.2s;
-}
-
-
-body {
   
-  background: linear-gradient(-45deg, #990000, #080808, rgb(133, 0, 0), #000000);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+}
+a.lightmode{
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+}
+a.lightmode:hover{
+  color:red;
+}
+body { /*default: darkmode
+  
+  /* background: linear-gradient(-45deg, #990000, #080808, rgb(133, 0, 0), #000000); */
+  background-color: rgb(22, 22, 22);
+  transition: background-color 1s ease-in-out, animation 2s ease-in-out, color 1s ease-out;
+  
   color: white;
-  transition: 1.2s;
+  
+}
+body.lightmode{ /*lightmode*/
+  /* background: linear-gradient(-45deg, #00c5f7, #cfcfcf, rgb(4, 140, 252), #0068e0); */
+  background-color: #dddddd;
+  
+  color: rgb(0, 0, 0);
+
 }
 
-@keyframes gradient
-{
+/* @keyframes breathingLight{ // doing animation fucks up smooth transition, will investigate in the future
   0% {
-    background-position: 100% 50%;
-}
-  25%{
-    background-position:25% 50%;
+    background:rgb(0, 160, 223);
   }
-50% {
-    background-position: 50% 50%;
-}
-75% {
-  background-position: 75% 50%;
-}
-100% {
-    background-position: 100% 50%;
-}
-}
+  50% {
+    background: rgb(218, 218, 218);
+  }
+  100%{
+    background: rgb(0, 160, 223);
+  }
+  }
+
+@keyframes breathing{
+  0% {
+    background:rgb(0, 0, 0);
+  }
+  50% {
+    background: rgb(107, 0, 0);
+  }
+  100%{
+    background: rgb(0, 0, 0);
+  }
+  } */
 img {
   object-fit: cover;
 }
@@ -58,8 +78,12 @@ img {
   border-radius: 50%;
   border: 1px white solid;
   display: inline-block;
-  transition:1.2s;
+  transition:border 1s ease-out, background-color 1s ease-out;
   pointer-events: none;
+}
+#me.lightmode{
+  border:1px black solid;
+  background-color: black;
 }
 #yt{
   width: 120px;
@@ -69,21 +93,35 @@ img {
   border-radius: 50%;
   border: 1px white solid;
   display: inline-block;
-  transition:1.2s;
+  transition:background-color 1s ease-out, border 1s ease-out, transform 0.5s ease-out;
 }
-.intro {
+#yt:hover{
+  transform: scale(120%);
+}
+#yt.lightmode{
+  background-color: #000000;
+  border: 1px black solid;
+}
+#intro {
   font-size: larger;
   color:rgb(216, 216, 216);
+  transition: color 1s ease-out;
+}
+#intro.lightmode{
+  color:#000000;
 }
 #nickname{
   font-weight: bolder;
   font-style:italic;
   color: rgb(51, 255, 0);
   text-decoration: none;
-  transition: 1.2s;
   font-family:'Tektur', cursive;
+  transition: color 1s ease-out;
 }
-.intro i{
+#nickname.lightmode{
+  color: rgb(255, 115, 0);
+}
+#intro i{
   font-weight: bold;
 }
 #first{
@@ -92,14 +130,21 @@ img {
 }
 #second{
   color:snow;
+  transition: color 1s ease-out;
+}
+#second.lightmode{
+  color:rgb(160, 160, 160);
 }
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
+  border: 1px solid #f1f1f1;
   background-color: #f1f1f1;
   text-align: center;
   display: inline-block;
-  
+}
+.tab.lightmode{
+  border: 1px solid #000000;
+  background-color: #0f0f0f;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -110,21 +155,30 @@ img {
   outline: #000000;
   cursor: pointer;
   padding: 1.4rem 1.4rem;
-  transition: 0.5s;
   text-align: center;
   font-size:1.2rem;
+  color:#000000;
+  transition: 0.7s;
+}
+.tab button.lightmode{
+  color:white;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #000000;
-  color: rgb(255, 255, 255);
-
+  color:white;
 }
-
+.tab button.lightmode:hover{
+background-color: rgb(255, 255, 255);
+  color:black;
+}
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #dad7d7;
+}
+.tab button.lightmode.active{
+  background-color: rgb(92, 92, 92);
 }
 
 /* Style the tab content */
@@ -143,12 +197,13 @@ iframe{
   background-color: black;
   color: white;
   font-size:1.4rem;
+  transition: background-color 0.7s ease-out, color 0.7s ease-out;
 }
 
 .togglemodes:hover {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  transition: 0.5s;
+  
 }
 h3 {
    padding: 0.5rem;
@@ -159,11 +214,15 @@ h3 {
 }
 #project-card{
   list-style:none;
-  background-color: rgba(0, 0, 0, 0.336);
+  background-color: rgba(253, 253, 253, 0.219);
   margin: 0 auto;
   padding: 2rem 2rem;
   width: 30rem;
   border-radius: 1.4rem;
+  transition: background-color 1s ease-out;
+}
+#project-card.lightmode{
+  background-color: rgba(56, 56, 56, 0.411);;
 }
 #project-card-img {
   object-fit:cover;
@@ -218,13 +277,17 @@ h4 {
 @media (max-width:32rem)
 {
   body {
-    background: black;
-    animation: breathing 8s ease infinite;
+    background-color: rgb(31, 31, 31);
     color: white;
     transition: 1.2s;
   }
+  body.lightmode{
+    background-color: rgb(218, 218, 218);
+    color:rgb(0, 0, 0);
+  }
   .togglemodes{
     font-size:2.4rem;
+   
   }
   .tab{
     display:flex;
